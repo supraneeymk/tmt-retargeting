@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>น้ำตกแม่เตี๊ยะ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700|Source+Sans+Pro:900");
+
+      /* Reset */
+      html, body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+      }
+	
+	  p {
+	  	font-size: 1.25rem;
+		text-align: justify;
+		margin: 0.5rem 0 0.5rem 0;
+	  }
+
+	  .pcenter {
+	  	font-size: 1.25rem;
+		text-align: center;
+		margin: 0.5rem 0 1rem 0;
+	  }
+	  .pcenter-red {
+	  	font-size: 1.25rem;
+		text-align: center;
+		margin: 0.5rem 0 1rem 0;
+		color: #D92323;
+	  }
+	  .pbox {
+		background-color: #FFE3E3;
+  		padding: 1rem 1.2rem;
+  		border-radius: 8px;
+  		box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  		text-align: center;
+	  }
+
+
+
+	  h1, h2, h3, h4, h5, h6 {
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-weight: 900;
+		line-height: 1.5;
+		letter-spacing: 0.035em;
+		text-transform: uppercase;
+		margin: 0 0 1rem 0;
+	  }
+
+	  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		border-bottom: 0;
+		color: inherit;
+		text-decoration: none;
+	  }
+
+	  h1 { font-size: 4rem; line-height: 1.1; margin: 0 0 0.5rem 0; }
+	  h2 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.5rem 0; }
+	  h3 { font-size: 1.25rem; margin: 0 0 1rem 0; }
+	  h4 { font-size: 1rem; }
+	  h5 { font-size: 0.9rem; }
+	  h6 { font-size: 0.8rem; }
+
+      ul { list-style: none; }
+
+      body {
+        font-family: "Merriweather", Georgia, serif;
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #1C1919;
+        background-color: #1C1919;
+      }
+
+      /* Main */
+      #main {
+        background-color: #fff;
+        margin: 0 auto;
+        max-width: 72rem;
+        width: calc(100% - 4rem);
+        z-index: 2;
+      }
+      #main > * {
+        padding: 4rem 4rem 2rem;
+        border-top: 2px solid #eee;
+      }
+      #main > *:first-child {
+        border-top: 0;
+        padding-top:1rem; /* closer to top */
+      }
+      #main > *:not(:first-child)::before {
+		  content: "";
+		  display: block;
+		  width: 100px; /* line length */
+		  height: 4px;
+		  margin: 0 auto 2rem auto; /* centered with space below */
+		  background: linear-gradient(to right, #D42828, #FF6B6B);
+		  border-radius: 2px;
+		}
+
+      /* Post */
+      .post.featured {
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+      .post.featured h2 {
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+      }
+      .post.featured h3 {
+        font-family: "Merriweather", Georgia, serif;
+        font-size: 1.25rem;
+        font-weight: 300;
+        color: #333;
+      }
+
+      /* Image */
+      .image.main {
+        position: relative;
+        display: block;
+        margin: 1rem 0;
+        width: 100%;
+      }
+
+      .image.main img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        display: block;
+      }
+
+      /* Gradient divider style */
+	  .divider {
+	    height: 1px; 
+	    width: 100%; 
+	    margin: 2rem 0; 
+	    background: linear-gradient(to right, #9C9C9C, #CCCCCC);
+	    border-radius: 2px;
+	  }
+
+      /* Button */
+      .btn-solid,
+      .btn-overlay {
+        display: inline-block;
+        background: transparent;
+        color: #292929;
+        padding: 0.5rem 1.5rem;
+        border-radius: 25px;
+        border: 2px solid #292929;
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.2s;
+        text-align: center;
+        white-space: nowrap;
+        line-height: 1.2;
+      }
+
+      .btn-solid {
+	    color: #D12A2A;
+	    border-color: #D12A2A;
+	  }
+
+	  .btn-overlay {
+	    position: absolute;
+	    bottom: 1.5rem; /* optional spacing */
+	    left: 50%;
+	    transform: translateX(-50%);
+	    color: #D12A2A;
+	    border-color: #D12A2A;
+	    padding: 0.6rem 1.8rem; /* slightly bigger for mobile readability */
+	  }
+
+      .btn-solid:hover,
+      .btn-overlay:hover {
+        background: #D42828;
+        color: #fff;
+        border-color: #D42828;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .btn-solid,
+        .btn-overlay {
+          font-size: 0.9rem;
+          padding: 0.45rem 1.2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .btn-solid,
+	    .btn-overlay {
+	      font-size: 0.9rem;
+	      padding: 0.5rem 1.2rem;
+	    }
+      }
+
+      @media (max-width: 768px) {
+        .post.featured h1 { font-size: 2rem; }
+        .post.featured h2 { font-size: 1.5rem; }
+        .post.featured p { font-size: 1rem; }
+        .pcenter { font-size: 1rem; }
+        #main > * { padding: 2rem 1rem; }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Main -->
+    <div id="main">
+      <!-- Featured Post -->
+      <article class="post featured">
+
+        <header class="major">
+          <h1>น้ำตกแม่เตี๊ยะ</h1>
+          <h2>ตำบลดอยแก้ว อำเภอจอมทอง</h2>
+          <h3>จุดกางเต๊นท์ลับ วิวสวยอลังการ เปิดให้เข้าเที่ยวแล้ววันนี้</h3>
+        </header>
+
+        <div class="image main">
+          <img src="https://image.bangkokbiznews.com/uploads/images/contents/w1024/2024/12/LQ4NDUrIkY7S45BEDU5T.webp?x-image-process=style/md-webp" alt="น้ำตกแม่เตี๊ยะ เชียงใหม่" />   
+          <p class="pbox">น้ำตกแม่เตี๊ยะ เป็นน้ำตกที่สูงใหญ่ สวยงามที่สุดในอุทยานแห่งชาติออบหลวง น้ำตกแห่งนี้เป็นน้ำตกที่อยู่ในบริเวณกลางป่าลึกในห้วยแม่เตี๊ยะตอนกลาง อยู่ในท้องที่ของตำบลดอยแก้ว อำเภอจอมทอง ตั้งอยู่บริเวณกลางป่าลึก น้ำตกมีทั้งหมด 4 ชั้น มีระยะทางประมาณ 5 กิโลเมตร มีน้ำตลอดปีจึงทำให้มีความงามของน้ำตกตลอดทั้งปี <br>
+          	<a href="https://portal.dnp.go.th/Content/nationalpark?contentId=3456" class="btn-solid">ดูรายละเอียดเพิ่มเติม</a>
+          </p>
+        </div>
+
+        <div class="divider"></div>
+		
+		<p class="pcenter"><b>หารถขับไปเที่ยว ลองไปดูกันเลย!</b><br>จะสายลุย หรือสายชิล โตโยต้ามีให้ครบ</p>
+        <div class="image main">
+          <img src="https://img5.pic.in.th/file/secure-sv1/model-list.jpg" alt="Toyota Motor Thailand" />
+          <br>
+          <ul class="actions">
+          	<li><a href="https://www.toyota.co.th/model-list" class="btn-solid">ดูข้อมูลรถทุกรุ่น</a></li>
+          </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="pcenter"><b>แล้วคุณจะไม่พลาดข้อมูลดีๆ และกิจกรรมที่ตรงใจ</b><br>เพียงลงทะเบียนและบอกเราหน่อยว่า<br>ข้อมูลประเภทไหนที่คุณสนใจ</p>
+        <ul class="actions">
+          <li><a href="#" class="btn-solid">คลิก! ลงทะเบียน</a></li>
+        </ul>
+
+      </article>
+    </div>
+  </body>
+</html>
