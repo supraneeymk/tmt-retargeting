@@ -38,7 +38,32 @@
   		text-align: center;
 	  }
 
+		.brand-tab {
+		  /* background-color: #000000; Red */
+		  background: linear-gradient(to top, #000000, #5E5E5E);
+		  color: #fff; /* White text */
+		  display: flex;
+		  align-items: center; /* Vertical center */
+		  justify-content: center; /* Horizontal center */
+		  gap: 0.8rem; /* Space between logo and text */
+		  padding: 0.8rem 1rem;
+		  font-weight: 700;
+		  font-family: "Source Sans Pro", Helvetica, sans-serif;
+		  font-size: 1.2rem;
+		  letter-spacing: 0.05em;
+		  text-transform: uppercase;
+		  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
 
+		.brand-logo {
+		  height: 80px; /* adjust as needed */
+		  width: auto;
+		}
+
+		.brand-text {
+		  white-space: nowrap; /* prevent line break */
+		  padding: 0 0 0 1rem;
+		}
 
 	  h1, h2, h3, h4, h5, h6 {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -69,7 +94,7 @@
         font-size: 1rem;
         line-height: 1.8;
         color: #1C1919;
-        background-color: #1C1919;
+        background-color: #E0E0E0;
       }
 
       /* Main */
@@ -208,7 +233,16 @@
     </style>
   </head>
   <body class="is-preload">
+
+	<!-- Branding Header Tab -->
+
+	<div class="brand-tab">
+	  <img src="https://images.seeklogo.com/logo-png/17/2/toyota-logo-png_seeklogo-171947.png" alt="Brand Logo" class="brand-logo" />
+	  <span class="brand-text">Ride into Nature</span>
+	</div>
+
     <!-- Main -->
+
     <div id="main">
       <!-- Featured Post -->
       <article class="post featured">
