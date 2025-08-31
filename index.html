@@ -1,286 +1,339 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Toyota Motor Thailand | Ride into Nature</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700|Source+Sans+Pro:900");
+<head>
+  <title>น้ำตกแม่เตี๊ยะ</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700|Source+Sans+Pro:900");
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-      /* Reset */
-      html, body, h1, h2, h3, p, ul, li {
-        margin: 0;
-        padding: 0;
-      }
-	
-	  p {
-	  	font-size: 1.25rem;
-		text-align: justify;
-		margin: 0.5rem 0 0.5rem 0;
-	  }
+    /* Reset */
+    html, body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
 
-	  .pcenter {
-	  	font-size: 1.25rem;
-		text-align: center;
-		margin: 0.5rem 0 1rem 0;
-	  }
-	  .pcenter-red {
-	  	font-size: 1.25rem;
-		text-align: center;
-		margin: 0.5rem 0 1rem 0;
-		color: #D92323;
-	  }
-	  .pbox {
-		background-color: #FFE3E3;
-  		padding: 1rem 1.2rem;
-  		border-radius: 8px;
-  		box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  		text-align: center;
-	  }
+    a {
+      color: #D92323;       /* red link color */
+      text-decoration: underline; /* remove underline */
+    }
 
-		.brand-tab {
-		  /* background-color: #000000; Red */
-		  background: linear-gradient(to top, #000000, #5E5E5E);
-		  color: #fff; /* White text */
-		  display: flex;
-		  align-items: center; /* Vertical center */
-		  justify-content: center; /* Horizontal center */
-		  gap: 0.8rem; /* Space between logo and text */
-		  padding: 0.2rem 1rem;
-		  font-weight: 700;
-		  font-family: "Source Sans Pro", Helvetica, sans-serif;
-		  font-size: 1.2rem;
-		  letter-spacing: 0.05em;
-		  text-transform: uppercase;
-		  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-		}
+    a:hover {
+      color: #A61B1B;       /* darker red on hover (optional) */
+      text-decoration: underline; /* or keep none if you don't want hover underline */
+    }
+    
+    p {
+      font-size: 1.25rem;
+      text-align: left;
+      margin: 0.5rem 0 0.5rem 0;
+    }
+    .highlight-bold {
+      font-weight: 600; /* heavier than bold */
+    }
+    .highlight-red {
+      font-weight: 600; /* heavier than bold */
+      color: #D92323; 
+    }
+    .pcenter {
+     font-size: 1.25rem;
+     font-weight: 400;
+     text-align: center;
+     margin: 0.5rem 0 1rem 0;
+   }
+   .pcenter-red {
+     font-size: 1.25rem;
+     font-weight: 500;
+     text-align: center;
+     margin: 0.5rem 0 1rem 0;
+     color: #D92323;
+   }
+   .pbox {
+    background-color: #FFE3E3;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: justify-content;
+  }
 
-		.brand-logo {
-		  height: 50px; /* adjust as needed */
-		  width: auto;
-		}
+  .brand-tab {
+    /* background-color: #000000; Red */
+    background: linear-gradient(to top, #000000, #5E5E5E);
+    color: #fff; /* White text */
+    display: flex;
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Horizontal center */
+    gap: 0.8rem; /* Space between logo and text */
+    padding: 0.2rem 1rem;
+    font-weight: 700;
+    font-family: Prompt, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
 
-		.brand-text {
-		  white-space: nowrap; /* prevent line break */
-		  padding: 0 0 0 1rem;
-		}
+  .brand-logo {
+    height: 50px; /* adjust as needed */
+    width: auto;
+  }
 
-	  h1, h2, h3, h4, h5, h6 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-weight: 900;
-		line-height: 1.5;
-		letter-spacing: 0.035em;
-		text-transform: uppercase;
-		margin: 0 0 1rem 0;
-	  }
+  .brand-text {
+    white-space: nowrap; /* prevent line break */
+    padding: 0 0 0 1rem;
+  }
 
-	  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-		border-bottom: 0;
-		color: inherit;
-		text-decoration: none;
-	  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Prompt, sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+  }
 
-	  h1 { font-size: 4rem; line-height: 1.1; margin: 0 0 0.5rem 0; }
-	  h2 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.5rem 0; }
-	  h3 { font-size: 1.25rem; margin: 0 0 1rem 0; }
-	  h4 { font-size: 1rem; }
-	  h5 { font-size: 0.9rem; }
-	  h6 { font-size: 0.8rem; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    border-bottom: 0;
+    color: inherit;
+    text-decoration: none;
+  }
 
-      ul { list-style: none; }
+  h1 { font-size: 2.5rem; line-height: 1; margin: 0 0 0.5rem 0; }
+  h2 { font-size: 1.25rem; line-height: 1; margin: 0 0 0.5rem 0; }
+  h3 { font-size: 1.1rem; margin: 0 0 1rem 0; }
+  h4 { font-size: 1rem; }
+  h5 { font-size: 0.9rem; }
+  h6 { font-size: 0.8rem; }
 
-      body {
-        font-family: "Merriweather", Georgia, serif;
-        font-size: 1rem;
-        line-height: 1.8;
-        color: #1C1919;
-        background-color: #E0E0E0;
-      }
+  ul { list-style: none; }
 
-      /* Main */
-      #main {
-        background-color: #fff;
-        margin: 0 auto;
-        max-width: 72rem;
-        width: calc(100% - 4rem);
-        z-index: 2;
-      }
-      #main > * {
-        padding: 4rem 4rem 2rem;
-        border-top: 2px solid #eee;
-      }
-      #main > *:first-child {
-        border-top: 0;
-        padding-top:1rem; /* closer to top */
-      }
-      #main > *:not(:first-child)::before {
-		  content: "";
-		  display: block;
-		  width: 100px; /* line length */
-		  height: 4px;
-		  margin: 0 auto 2rem auto; /* centered with space below */
-		  background: linear-gradient(to right, #D42828, #FF6B6B);
-		  border-radius: 2px;
-		}
+  body {
+    font-family: Prompt, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #1C1919;
+    background-color: #E0E0E0;
+  }
 
-      /* Post */
-      .post.featured {
-        text-align: center;
-        padding: 4rem 2rem;
-      }
-      .post.featured h2 {
-        font-family: "Source Sans Pro", Helvetica, sans-serif;
-        font-size: 2.5rem;
-        font-weight: 900;
-        margin-bottom: 1rem;
-      }
-      .post.featured h3 {
-        font-family: "Merriweather", Georgia, serif;
-        font-size: 1.25rem;
-        font-weight: 300;
-        color: #333;
-      }
+  /* Main */
+  #main {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 72rem;
+    width: calc(100% - 4rem);
+    z-index: 2;
+  }
+  #main > * {
+    padding: 4rem 4rem 2rem;
+    border-top: 2px solid #eee;
+  }
+  #main > *:first-child {
+    border-top: 0;
+    padding-top:1rem; /* closer to top */
+  }
+  #main > *:not(:first-child)::before {
+    content: "";
+    display: block;
+    width: 100px; /* line length */
+    height: 4px;
+    margin: 0 auto 2rem auto; /* centered with space below */
+    background: linear-gradient(to right, #D42828, #FF6B6B);
+    border-radius: 2px;
+  }
 
-      /* Image */
-      .image.main {
-        position: relative;
-        display: block;
-        margin: 1rem 0;
-        width: 100%;
-      }
+  /* Post */
+  .post.featured {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  .post.featured h1 {
+    font-family: Prompt, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .post.featured h2 {
+    font-family: Prompt, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .post.featured h3 {
+    font-family: Prompt, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333;
+  }
 
-      .image.main img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-        display: block;
-      }
+  /* Center buttons */
+  .actions, 
+  .image.main p a.btn-solid {
+    display: flex;
+    justify-content: center;
+  }
 
-      /* Gradient divider style */
-	  .divider {
-	    height: 1px; 
-	    width: 100%; 
-	    margin: 2rem 0; 
-	    background: linear-gradient(to right, #9C9C9C, #CCCCCC);
-	    border-radius: 2px;
-	  }
+  /* First section background (light-red box) */
+  .featured-section {
+    background-color: #FFEAEA; /* light red */
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
 
-      /* Button */
-      .btn-solid,
-      .btn-overlay {
-        display: inline-block;
-        background: transparent;
-        color: #292929;
-        padding: 0.5rem 1.5rem;
-        border-radius: 25px;
-        border: 2px solid #292929;
-        font-size: 0.95rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-decoration: none;
-        transition: 0.2s;
-        text-align: center;
-        white-space: nowrap;
-        line-height: 1.2;
-      }
+  /* Image */
+  .image.main {
+    position: relative;
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+  }
 
-      .btn-solid {
-	    color: #D12A2A;
-	    border-color: #D12A2A;
-	  }
+  .image.main img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+  }
 
-	  .btn-overlay {
-	    position: absolute;
-	    bottom: 1.5rem; /* optional spacing */
-	    left: 50%;
-	    transform: translateX(-50%);
-	    color: #D12A2A;
-	    border-color: #D12A2A;
-	    padding: 0.6rem 1.8rem; /* slightly bigger for mobile readability */
-	  }
+  /* Gradient divider style */
+  .divider {
+   height: 1px; 
+   width: 100%; 
+   margin: 2rem 0; 
+   background: linear-gradient(to right, #9C9C9C, #CCCCCC);
+   border-radius: 2px;
+ }
 
-      .btn-solid:hover,
-      .btn-overlay:hover {
-        background: #D42828;
-        color: #fff;
-        border-color: #D42828;
-      }
+ /* Button */
+ .btn-solid,
+ .btn-overlay {
+  display: inline-block;
+  background: transparent;
+  color: #292929;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  border: 2px solid #292929;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none !important; /* remove underline */
+  transition: 0.2s;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.2;
+}
 
-      /* Responsive */
-      @media (max-width: 768px) {
-        .btn-solid,
-        .btn-overlay {
-          font-size: 0.9rem;
-          padding: 0.45rem 1.2rem;
-        }
-      }
+.btn-solid {
+ color: #D12A2A;
+ border-color: #D12A2A;
+}
 
-      @media (max-width: 480px) {
-        .btn-solid,
-	    .btn-overlay {
-	      font-size: 0.9rem;
-	      padding: 0.5rem 1.2rem;
-	    }
-      }
+.btn-overlay {
+ position: absolute;
+ bottom: 1.5rem; /* optional spacing */
+ left: 50%;
+ transform: translateX(-50%);
+ color: #D12A2A;
+ border-color: #D12A2A;
+ padding: 0.6rem 1.8rem; /* slightly bigger for mobile readability */
+}
 
-      @media (max-width: 768px) {
-        .post.featured h1 { font-size: 2rem; }
-        .post.featured h2 { font-size: 1.5rem; }
-        .post.featured p { font-size: 1rem; }
-        .pcenter { font-size: 1rem; }
-        #main > * { padding: 2rem 1rem; }
-      }
-    </style>
-  </head>
-  <body class="is-preload">
+.btn-solid:hover,
+.btn-overlay:hover {
+  background: #D42828;
+  color: #fff;
+  border-color: #D42828;
+}
 
-	<!-- Branding Header Tab -->
+/* Responsive */
+@media (max-width: 768px) {
+  .btn-solid,
+  .btn-overlay {
+    font-size: 0.9rem;
+    padding: 0.45rem 1.2rem;
+  }
+}
 
-	<div class="brand-tab">
-	  <img src="https://images.seeklogo.com/logo-png/17/2/toyota-logo-png_seeklogo-171947.png" alt="Brand Logo" class="brand-logo" />
-	  <span class="brand-text">Ride into Nature</span>
-	</div>
+@media (max-width: 480px) {
+  .btn-solid,
+  .btn-overlay {
+   font-size: 0.9rem;
+   padding: 0.5rem 1.2rem;
+ }
+}
 
-    <!-- Main -->
+@media (max-width: 1920px) {
+  .post.featured h1 { font-size: 2.5rem; }
+  .post.featured h2 { font-size: 1.5rem; }
+  .post.featured h3 { font-size: 1.2rem; }
+  .post.featured p { font-size: 1rem; }
+  .pcenter { font-size: 1rem; }
+  #main > * { padding: 2rem 1rem; }
+}
 
-    <div id="main">
-      <!-- Featured Post -->
-      <article class="post featured">
+@media (max-width: 768px) {
+  .post.featured h1 { font-size: 2rem; }
+  .post.featured h2 { font-size: 1rem; }
+  .post.featured h3 { font-size: 0.9rem; }
+  .post.featured p { font-size: 0.9rem; }
+  .post.featured a { font-size: 0.9rem; }
+  .pcenter { font-size: 1rem; }
 
-        <header class="major">
-          <h1>น้ำตกแม่เตี๊ยะ</h1>
-          <h2>ตำบลดอยแก้ว อำเภอจอมทอง</h2>
-          <h3>จุดกางเต๊นท์ลับ วิวสวยอลังการ เปิดให้เข้าเที่ยวแล้ววันนี้</h3>
-        </header>
+  #main > * { padding: 2rem 1rem; }
+}
+</style>
+</head>
+<body class="is-preload">
 
-        <div class="image main">
-          <img src="https://image.bangkokbiznews.com/uploads/images/contents/w1024/2024/12/LQ4NDUrIkY7S45BEDU5T.webp?x-image-process=style/md-webp" alt="น้ำตกแม่เตี๊ยะ เชียงใหม่" />   
-          <p class="pbox">น้ำตกแม่เตี๊ยะ เป็นน้ำตกที่สูงใหญ่ สวยงามที่สุดในอุทยานแห่งชาติออบหลวง น้ำตกแห่งนี้เป็นน้ำตกที่อยู่ในบริเวณกลางป่าลึกในห้วยแม่เตี๊ยะตอนกลาง อยู่ในท้องที่ของตำบลดอยแก้ว อำเภอจอมทอง ตั้งอยู่บริเวณกลางป่าลึก น้ำตกมีทั้งหมด 4 ชั้น มีระยะทางประมาณ 5 กิโลเมตร มีน้ำตลอดปีจึงทำให้มีความงามของน้ำตกตลอดทั้งปี <br>
-          	<a href="https://portal.dnp.go.th/Content/nationalpark?contentId=3456" class="btn-solid">ดูรายละเอียดเพิ่มเติม</a>
-          </p>
-        </div>
+ <!-- Branding Header Tab -->
 
-        <div class="divider"></div>
-		
-		<p class="pcenter"><b>หารถขับไปเที่ยว ลองไปดูกันเลย!</b><br>จะสายลุย หรือสายชิล โตโยต้ามีให้ครบ</p>
-        <div class="image main">
-          <img src="https://img5.pic.in.th/file/secure-sv1/model-list.jpg" alt="Toyota Motor Thailand" />
-          <br>
-          <ul class="actions">
-          	<li><a href="https://www.toyota.co.th/model-list" class="btn-solid">ดูข้อมูลรถทุกรุ่น</a></li>
-          </ul>
-        </div>
+ <div class="brand-tab">
+   <img src="https://images.seeklogo.com/logo-png/17/2/toyota-logo-png_seeklogo-171947.png" alt="Brand Logo" class="brand-logo" />
+   <span class="brand-text">Ride into Nature</span>
+ </div>
 
-        <div class="divider"></div>
+ <!-- Main -->
+ <div id="main">
+  <!-- Featured Post -->
+  <article class="post featured">
 
-        <p class="pcenter"><b>แล้วคุณจะไม่พลาดข้อมูลดีๆ และกิจกรรมที่ตรงใจ</b><br>เพียงลงทะเบียนและบอกเราหน่อยว่า<br>ข้อมูลประเภทไหนที่คุณสนใจ</p>
-        <ul class="actions">
-          <li><a href="https://toyotath.co/3UNJ4P7" class="btn-solid">คลิก! ลงทะเบียน</a></li>
-        </ul>
+    <header class="major">
+      <h1>น้ำตกแม่เตี๊ยะ</h1>
+      <h2>ตำบลดอยแก้ว อำเภอจอมทอง จังหวัดเชียงใหม่</h2>
+      <h3>จุดกางเต๊นท์ลับ วิวน้ำตกสวยอลังการ สำหรับสายชื่นชอบธรรมชาติ</h3>
+    </header>
 
-      </article>
+    <div class="image main">
+      <img src="https://img5.pic.in.th/file/secure-sv1/waterfall_maetia.jpg" alt="น้ำตกแม่เตี๊ยะ เชียงใหม่" />
     </div>
-  </body>
+
+    <div class="featured-section">
+      <p><span class="highlight-red">น้ำตกแม่เตี๊ยะ</span> เป็นน้ำตกที่สูงใหญ่ สวยงามที่สุดในอุทยานแห่งชาติออบหลวง น้ำตกแห่งนี้เป็นน้ำตกที่อยู่ในบริเวณกลางป่าลึกในห้วยแม่เตี๊ยะตอนกลาง อยู่ในท้องที่ของตำบลดอยแก้ว อำเภอจอมทอง ตั้งอยู่บริเวณกลางป่าลึก น้ำตกมีทั้งหมด 4 ชั้น มีระยะทางประมาณ 5 กิโลเมตร มีน้ำตลอดปีจึงทำให้มีความงามของน้ำตกตลอดทั้งปี</p>
+      <p><span class="highlight-red">การเดินทาง</span> ทางเข้าค่อนข้างสูงชันและแคบ แต่เป็นถนนลาดยางอย่างดี จากที่ทำการหน่วยพิทักษ์อุทยานแห่งชาติที่ อล. สามารถขับรถ 4x4 เข้าไปได้ แต่รถเล็กแนะนำให้จอดบริเวณสะพานและเดินเท้าต่อ</p>
+      <p><span class="highlight-red">การจองกางเต๊นท์</span> ติดตามช่วงเวลาเปิดทำการและจองกางเต๊นท์ได้ที่<a href="https://www.facebook.com/opluangnationalpark">อุทยานแห่งชาติออบหลวง</a>
+      </p>
+    </div>
+
+    <div class="divider"></div>
+    
+    <p class="pcenter"><span class="highlight-bold">หารถขับไปเที่ยว ต้องรถโตโยต้า!</span><br>จะสายลุยหรือสายชิล ก็มีให้เลือกครบทุกแนว</p>
+    <div class="image main">
+      <img src="https://img5.pic.in.th/file/secure-sv1/model-list.jpg" alt="Toyota Motor Thailand" />
+      <br>
+      <ul class="actions">
+       <li><a href="https://www.toyota.co.th/model-list" class="btn-solid">ดูรุ่นรถ คลิก</a></li>
+     </ul>
+   </div>
+
+   <div class="divider"></div>
+
+   <p class="pcenter"><span class="highlight-bold">โตโยต้าพร้อมเสิร์ฟคอนเทนต์ให้ตรงใจคุณ..</span><br>ลงทะเบียนรับข่าวสารและกิจกรรมดีๆ กับเราได้เลย</p>
+   <ul class="actions">
+    <li><a href="https://toyotath.co/3UNJ4P7" class="btn-solid">ลงทะเบียน คลิก</a></li>
+  </ul>
+
+</article>
+</div>
+</body>
 </html>
-
-
