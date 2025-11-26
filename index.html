@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="icon" type="image/png" href="https://img5.pic.in.th/file/secure-sv1/Toyota_logo_black_icontitle64_shape.png">
-  <title>Toyota Motor Thailand | Sport - Premier League</title>
+  <title>Toyota Motor Thailand | Travel Guide - Your Dream Trip</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <style>
@@ -36,11 +36,6 @@
     .highlight-red {
       font-weight: 600; /* heavier than bold */
       color: #D92323; 
-    }
-    .highlight-gr {
-      background-color: black;
-      color: red; /* Optional: set text color for contrast */
-      padding: 2px 8px;
     }
     .pcenter {
      font-size: 1.25rem;
@@ -126,7 +121,7 @@
   #main {
     background-color: #fff;
     margin: 0 auto;
-    max-width: 50rem;
+    max-width: 72rem;
     width: calc(100% - 1rem);
     z-index: 2;
   }
@@ -206,7 +201,7 @@
   .image.main img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     display: block;
   }
 
@@ -260,7 +255,109 @@
   border-color: #D42828;
 }
 
+
+/* Card Vacation */
+
+/* Container */
+.gallery-wrap{width:100%;max-width:1100px}
+h1.section-title{font-size:1.6rem;margin:0 0 18px;color:#0b1220;text-align:center}
+p.lead{margin:0 0 28px;text-align:center;color:#475569}
+
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+
+
+/* Card */
+.card{
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 6px 24px rgba(15,23,42,0.08);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  transition:transform .28s ease, box-shadow .28s ease;
+  cursor:default}
+
+.card:focus-within, .card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 18px 48px rgba(15,23,42,0.12)}
+
+
+.card-media{
+  position:relative;
+  height:220px;
+  overflow:hidden}
+
+.card-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .6s ease}
+
+.card:hover .card-media img{
+  transform:scale(1.06)}
+
+
+.card-body{
+  padding:16px 16px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:8px}
+
+.card-title{
+  font-weight:600;
+  font-size:1.05rem;
+  margin:0;
+  color:#0b1220}
+
+.card-location{
+  font-size:.875rem;
+  color:#475569;
+  margin:0}
+
+.card-desc{
+  font-size:.95rem;
+  color:#334155;
+  margin-top:6px;
+  flex:1}
+
+.card-meta{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:12px}
+
+.pill{
+  font-size:.8rem;
+  padding:6px 8px;
+  background:#fbe3e3;
+  border-radius:999px;
+  color:#b81919}
+
+
+/* Small accessibility helper for keyboard users */
+.card a{outline: none}
+.card a:focus{box-shadow:0 0 0 3px rgba(14,165,164,0.18);
+  border-radius:10px}
+
+/* End Card Vacation */
+
+
+
+
 /* Responsive */
+
+@media (max-width:980px){
+.cards{grid-template-columns:repeat(2,1fr)}
+}
+
+@media (max-width:640px){
+
+.cards{grid-template-columns:1fr}
+.card-media{height:220px}
+}
+
 @media (max-width: 768px) {
   .btn-solid,
   .btn-overlay {
@@ -315,29 +412,89 @@
  <!-- Branding Header Tab -->
   <div class="brand-tab">
    <img src="https://img2.pic.in.th/pic/Toyota_logo_white_padding.png" alt="Brand Logo" class="brand-logo" />
-   <span class="brand-text">SPORT - Premier League Schedule</span>
+   <span class="brand-text">TRAVEL - Your Dream Trip</span>
  </div>
 
  <!-- Main -->
  <div id="main">
 
+
   <!-- Featured Post -->
   <article class="post featured">
 
-    <div class="image main">
-      <img src="https://img5.pic.in.th/file/secure-sv1/COLD_Special_EMAIL_ContentFootball_202511.jpg" alt="Premier League 2025/26 : Week 13" />
-    </div>
+    <header class="major">
+      <h2>แจก 3 พิกัด สวยจนต้องไปให้ได้</h2>
+      <h2>เปิดปี 2026 ด้วยทริปในฝัน ถ่ายรูปให้ล้นเมม</h2>
+    </header>
+
+
+
+
+<section class="cards" aria-label="Vacation places">
+
+
+<!-- Card 1 -->
+<article class="card">
+<div class="card-media">
+<img src="https://img2.pic.in.th/pic/p1f59ca7d2e69dea95.jpg?auto=format&fit=crop&w=1200&q=300" alt="Dolomites — Italy" />
+</div>
+<div class="card-body">
+<h3 class="card-title">Dolomites — Italy</h3>
+<!-- <p class="card-location">South Asia • Italy</p> -->
+<p class="card-desc">📍เส้นทางภูเขาระดับยูเนสโกที่ขึ้นชื่อเรื่องวิวอลังการ ไฮไลต์ คือ ทะเลสาบสีมรกต Lago di Braies, สันเขา Seceda และโขดหิน Tre Cime ถ่ายรูปสวยทุกมุม</p>
+<p>✨จุดเด่น: ธรรมชาติอลังการ เหมาะทั้งเดินชิลและสายแอคทีฟ</p>
+<div class="card-meta">
+<div class="pill">High season: มิ.ย. – ก.ย.</div>
+</div>
+</div>
+</article>
+
+
+<!-- Card 2 -->
+<article class="card">
+<div class="card-media">
+<img src="https://img2.pic.in.th/pic/p280337890bd460180.jpg?auto=format&fit=crop&w=1200&q=300" alt="Tromso — Norway" />
+</div>
+<div class="card-body">
+<h3 class="card-title">Tromso — Norway</h3>
+<!-- <p class="card-location">South Asia • Italy</p> -->
+<p class="card-desc">📍เมืองอาร์กติกล่าแสงเหนือที่สวยที่สุดแห่งหนึ่งบนโลก ขึ้นชื่อเรื่องท้องฟ้าใสและโอกาสเห็นแสงเหนือสูง พร้อมวิวฟยอร์ดที่สวยแบบเหนือจริง</p>
+<p>✨จุดเด่น: เมืองสงบปลอดภัย จุดดูแสงเหนือ Aurora วิวฟยอร์ด</p>
+<div class="card-meta">
+<div class="pill">High season: ธ.ค. – ก.พ.</div>
+</div>
+</div>
+</article>
+
+
+<!-- Card 3 -->
+<article class="card">
+<div class="card-media">
+<img src="https://img5.pic.in.th/file/secure-sv1/p35d82fafbe2b67d39.jpg?auto=format&fit=crop&w=1200&q=300&sat=-30" alt="Mostar — Bosnia" />
+</div>
+<div class="card-body">
+<h3 class="card-title">Mostar — Bosnia</h3>
+<!-- <p class="card-location">South Asia • Italy</p> -->
+<p class="card-desc">📍เมืองเก่าเสน่ห์จัดที่มีสะพาน Stari Most เป็นสัญลักษณ์ บรรยากาศยุโรปตะวันออกแบบวินเทจ พร้อมแม่น้ำ Neretva สีเทอร์ควอยซ์ที่สวยไม่เหมือนที่ไหน</p>
+<p>✨จุดเด่น: เมืองเก่าสวย พร้อมสะพานประวัติศาสตร์ และวิวแม่น้ำโดดเด่น</p>
+<div class="card-meta">
+<div class="pill">High season: ก.ย. - ต.ค.</div>
+</div>
+</div>
+</article>
+
+
+</section>
+
 
     <div class="divider"></div>
 
-    
+    <p class="pcenter"><span class="highlight-bold">รถพร้อมขนกระเป๋าเดินทาง</span><br>พื้นที่กว้าง ขนของครบ จบทุกทริปสบายๆ</p>
     <div class="image main">
-      <img src="https://img2.pic.in.th/pic/modelstitle097d50b91196ed20.png" alt="Toyota Sport Style" />
-      <h2><span class="highlight-gr">Toyota GR Sport พร้อมลุยทุกกิจกรรม</span></h2>
-      <img src="https://img5.pic.in.th/file/secure-sv1/COLD_Special_EMAIL_ContentModel_202511.jpg" alt="Toyota Motor Thailand" />
+      <img src="https://img5.pic.in.th/file/secure-sv1/COLD_Special_EMAIL_ModelList_202512.jpg" alt="Toyota Motor Thailand" />
       <br>
       <ul class="actions">
-        <li><a href="https://toyotath.co/47gSFFn" class="btn-solid">ดูรุ่นรถ คลิก</a></li>
+        <li><a href="https://www.toyota.co.th/model-list/?utm_source=EmailSF&utm_medium=Body&utm_content=ColdSpecial&utm_campaign=EmailSF_ColdSpecial_Allmodel_Body" class="btn-solid">ดูรุ่นรถ คลิก</a></li>
      </ul>
     </div>
 
@@ -345,7 +502,7 @@
 
     <p class="pcenter"><span class="highlight-bold">โตโยต้าพร้อมเสิร์ฟคอนเทนต์ให้ตรงใจคุณ..</span><br>ลงทะเบียนรับข่าวสารและกิจกรรมดีๆ กับเราได้เลย</p>
     <ul class="actions">
-      <li><a href="https://toyotath.co/47oiz8K" class="btn-solid">ลงทะเบียน คลิก</a></li>
+      <li><a href="line register link" class="btn-solid">ลงทะเบียน คลิก</a></li>
     </ul>
 
   </article>
