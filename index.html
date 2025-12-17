@@ -1,501 +1,119 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="https://img5.pic.in.th/file/secure-sv1/Toyota_logo_black_icontitle64_shape.png">
-  <title>Toyota Motor Thailand | New Trends 2026</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <style>
-    @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700|Source+Sans+Pro:900");
-    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  <meta charset="UTF-8" />
+  <title>Table of Contents</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    /* Reset */
-    html, body, h1, h2, h3, p, ul, li {
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
       margin: 0;
+      padding: 40px;
+      background: #f4f6f8;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .folder {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .folder h2 {
+      margin-top: 0;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eee;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hot h2 { color: #e53935; }
+    .warm h2 { color: #fb8c00; }
+    .cold h2 { color: #1e88e5; }
+
+    ul {
+      list-style: none;
       padding: 0;
+      margin: 15px 0 0;
+    }
+
+    li {
+      margin-bottom: 10px;
     }
 
     a {
-      color: #D92323;       /* red link color */
-      text-decoration: underline; /* remove underline */
+      text-decoration: none;
+      color: #333;
+      padding: 8px 10px;
+      display: block;
+      border-radius: 6px;
+      transition: background 0.2s;
     }
 
     a:hover {
-      color: #A61B1B;       /* darker red on hover (optional) */
-      text-decoration: underline; /* or keep none if you don't want hover underline */
+      background: #f0f0f0;
     }
-
-    p {
-      font-size: 1.25rem;
-      text-align: left;
-      margin: 0.5rem 0 0.5rem 0;
-    }
-    .highlight-bold {
-      font-weight: 600; /* heavier than bold */
-    }
-    .highlight-red {
-      font-weight: 600; /* heavier than bold */
-      color: #D92323; 
-    }
-    .pcenter {
-     font-size: 1.25rem;
-     font-weight: 400;
-     text-align: center;
-     margin: 0.5rem 0 1rem 0;
-   }
-   .pcenter-red {
-     font-size: 1.25rem;
-     font-weight: 500;
-     text-align: center;
-     margin: 0.5rem 0 1rem 0;
-     color: #D92323;
-   }
-   .pbox {
-    background-color: #FFE3E3;
-    padding: 1rem 1.2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    text-align: justify-content;
-  }
-
-  .brand-tab {
-    /* background-color: #000000; Red */
-    background: linear-gradient(to top, #000000, #5E5E5E);
-    color: #fff; /* White text */
-    display: flex;
-    align-items: center; /* Vertical center */
-    justify-content: center; /* Horizontal center */
-    gap: 0.8rem; /* Space between logo and text */
-    padding: 0.2rem 1rem;
-    font-weight: 600;
-    font-family: Prompt, sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-
-  .brand-logo {
-    height: 50px; /* adjust as needed */
-    width: auto;
-  }
-
-  .brand-text {
-    white-space: nowrap; /* prevent line break */
-    padding: 0 0 0 0rem;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: Prompt, sans-serif;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.035em;
-    text-transform: uppercase;
-    margin: 0 0 1rem 0;
-  }
-
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    border-bottom: 0;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  h1 { font-size: 2.5rem; line-height: 1; margin: 0 0 0.5rem 0; }
-  h2 { font-size: 1.25rem; line-height: 1; margin: 0 0 0.5rem 0; }
-  h3 { font-size: 1.1rem; margin: 0 0 1rem 0; }
-  h4 { font-size: 1rem; }
-  h5 { font-size: 0.9rem; }
-  h6 { font-size: 0.8rem; }
-
-  ul { list-style: none; }
-
-  body {
-    font-family: Prompt, sans-serif;
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #1C1919;
-    background-color: #E0E0E0;
-  }
-
-  /* Main */
-  #main {
-    background-color: #fff;
-    margin: 0 auto;
-    max-width: 72rem;
-    width: calc(100% - 1rem);
-    z-index: 2;
-  }
-  #main > * {
-    padding: 4rem 4rem 2rem;
-    border-top: 2px solid #eee;
-  }
-  #main > *:first-child {
-    border-top: 0;
-    padding-top:1rem; /* closer to top */
-  }
-  #main > *:not(:first-child)::before {
-    content: "";
-    display: block;
-    width: 100px; /* line length */
-    height: 4px;
-    margin: 0 auto 2rem auto; /* centered with space below */
-    background: linear-gradient(to right, #D42828, #FF6B6B);
-    border-radius: 2px;
-  }
-
-  /* Post */
-  .post.featured {
-    text-align: center;
-    padding: 4rem 2rem;
-  }
-  .post.featured h1 {
-    font-family: Prompt, sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  .post.featured h2 {
-    font-family: Prompt, sans-serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  .post.featured h3 {
-    font-family: Prompt, sans-serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #44c7eb;
-  }
-  .post.featured h4 {
-    font-family: Prompt, sans-serif;
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: #333;
-    text-transform: none !important;
-    font-style: italic;
-  }
-
-  /* Center buttons */
-  .actions, 
-  .image.main p a.btn-solid {
-    display: flex;
-    justify-content: center;
-  }
-
-  /* First section background (light-red box) */
-  .featured-section {
-    background-color: #FFEAEA; /* light red */
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-  }
-
-  /* Image */
-  .image.main {
-    position: relative;
-    display: block;
-    margin: 1rem 0;
-    width: 100%;
-  }
-
-  .image.main img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    display: block;
-  }
-
-  /* Gradient divider style */
-  .divider {
-   height: 1px; 
-   width: 100%; 
-   margin: 2rem 0; 
-   background: linear-gradient(to right, #9C9C9C, #CCCCCC);
-   border-radius: 2px;
- }
-
- /* Button */
- .btn-solid,
- .btn-overlay {
-  display: inline-block;
-  background: transparent;
-  color: #292929;
-  padding: 0.5rem 1.5rem;
-  border-radius: 25px;
-  border: 2px solid #292929;
-  font-size: 0.95rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none !important; /* remove underline */
-  transition: 0.2s;
-  text-align: center;
-  white-space: nowrap;
-  line-height: 1.2;
-}
-
-.btn-solid {
- color: #D12A2A;
- border-color: #D12A2A;
-}
-
-.btn-overlay {
- position: absolute;
- bottom: 1.5rem; /* optional spacing */
- left: 50%;
- transform: translateX(-50%);
- color: #D12A2A;
- border-color: #D12A2A;
- padding: 0.6rem 1.8rem; /* slightly bigger for mobile readability */
-}
-
-.btn-solid:hover,
-.btn-overlay:hover {
-  background: #D42828;
-  color: #fff;
-  border-color: #D42828;
-}
-
-
-/* Card Vacation */
-
-/* Container */
-.gallery-wrap{width:100%;max-width:1100px}
-h1.section-title{font-size:1.6rem;margin:0 0 18px;color:#44c7eb;text-align:center}
-p.lead{margin:0 0 28px;text-align:center;color:#475569}
-
-
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-
-
-/* Card */
-.card{
-  background:#fff;
-  border-radius:14px;
-  box-shadow:0 6px 24px rgba(15,23,42,0.08);
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  transition:transform .28s ease, box-shadow .28s ease;
-  cursor:default}
-
-.card:focus-within, .card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 18px 48px rgba(15,23,42,0.12)}
-
-
-.card-media{
-  position:relative;
-  height:220px;
-  overflow:hidden}
-
-.card-media img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:transform .6s ease}
-
-.card:hover .card-media img{
-  transform:scale(1.06)}
-
-
-.card-body{
-  padding:16px 16px 20px;
-  display:flex;
-  flex-direction:column;
-  gap:8px}
-
-.card-title{
-  font-weight:600;
-  font-size:1.05rem;
-  margin:0;
-  color: #44c7eb;}
-
-.card-location{
-  font-size:.875rem;
-  color:#475569;
-  margin:0}
-
-.card-desc{
-  font-size:.95rem;
-  color:#334155;
-  margin-top:6px;
-  flex:1}
-
-.card-meta{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin-top:12px}
-
-.pill{
-  font-size:.8rem;
-  padding:6px 8px;
-  background:#fbe3e3;
-  border-radius:999px;
-  color:#b81919}
-
-
-/* Small accessibility helper for keyboard users */
-.card a{outline: none}
-.card a:focus{box-shadow:0 0 0 3px rgba(14,165,164,0.18);
-  border-radius:10px}
-
-/* End Card Vacation */
-
-
-
-
-/* Responsive */
-
-@media (max-width:980px){
-.cards{grid-template-columns:repeat(2,1fr)}
-}
-
-@media (max-width:640px){
-
-.cards{grid-template-columns:1fr}
-.card-media{height:270px}
-}
-
-@media (max-width: 768px) {
-  .btn-solid,
-  .btn-overlay {
-    font-size: 0.9rem;
-    padding: 0.45rem 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .btn-solid,
-  .btn-overlay {
-   font-size: 0.9rem;
-   padding: 0.5rem 1.2rem;
- }
-}
-
-@media (max-width: 1920px) {
-  .post.featured h1 { font-size: 2.5rem; }
-  .post.featured h2 { font-size: 1.5rem; }
-  .post.featured h3 { font-size: 1.2rem; }
-  .post.featured p { font-size: 1rem; }
-  .pcenter { font-size: 1rem; }
-  #main > * { padding: 4rem 4rem; }
-}
-
-@media (max-width: 768px) {
-  .post.featured h1 { font-size: 2rem; }
-  .post.featured h2 { font-size: 1rem; }
-  .post.featured h3 { font-size: 0.9rem; }
-  .post.featured h4 { font-size: 0.7rem; }
-  .post.featured p { font-size: 0.9rem; }
-  .post.featured a { font-size: 0.9rem; }
-  .pcenter { font-size: 0.9rem; }
-  #main > * { padding: 2rem 2rem; }
-
-@media (max-width: 480px) {
-  .post.featured h1 { font-size: 1.75rem; }
-  .post.featured h2 { font-size: 0.9rem; }
-  .post.featured h3 { font-size: 0.9rem; }
-  .post.featured h4 { font-size: 0.5rem; }
-  .post.featured p { font-size: 0.9rem; }
-  .post.featured a { font-size: 0.9rem; }
-  .pcenter { font-size: 0.9rem; }
-  .brand-tab.brand-text { font-size: 0.8rem; }
-  #main > * { padding: 2rem 1rem; }
-}
-
-</style>
+  </style>
 </head>
-<body class="is-preload">
 
- <!-- Branding Header Tab -->
-  <div class="brand-tab">
-   <img src="https://img2.pic.in.th/pic/Toyota_logo_white_padding.png" alt="Brand Logo" class="brand-logo" />
-   <span class="brand-text">New Trends 2026</span>
- </div>
+<body>
 
- <!-- Main -->
- <div id="main">
+  <h1>📂 Table of Contents</h1>
 
+  <div class="container">
 
-  <!-- Featured Post -->
-  <article class="post featured">
-
-    <header class="major">
-      <h2>3 เทรนด์ AI ที่ควรรู้</h2>
-      <h2>✦ ปี 2026 ✦</h2>
-    </header>
-
-
-
-
-<section class="cards" aria-label="Vacation places">
-
-
-<!-- Card 1 -->
-<article class="card">
-<div class="card-media">
-<img src="https://img2.pic.in.th/pic/p1c2d3e9d14e88628d.jpg?auto=format&fit=crop&w=1200&q=300" alt="Dolomites — Italy" />
-</div>
-<div class="card-body">
-<h3 class="card-title"><b>AI เป็นทีม</b></h3>
-<p class="card-desc">AI หลายตัวทำงานร่วมกัน เพื่อจัดการงานที่ซับซ้อนแบบอัตโนมัติ ไม่ใช่แค่ถามตอบเหมือน Chatbot แต่เป็นตัวแทนอัตโนมัติที่ประสานกันเป็นระบบ workflow</p>
-</div>
-</article>
-
-
-<!-- Card 2 -->
-<article class="card">
-<div class="card-media">
-<img src="https://img2.pic.in.th/pic/p20510d6138699e9b4.jpg?auto=format&fit=crop&w=1200&q=300" alt="Dolomites — Italy" />
-</div>
-<div class="card-body">
-<h3 class="card-title"><b>AI อยู่ในอุปกรณ์จริง</b></h3>
-<p class="card-desc">AI ฝังเข้าไปในอุปกรณ์จริง ที่ระบบไม่ใช่แค่คิดแต่ลงมือทำจริง ในโลกจริง เช่น หุ่นยนต์หรือโดรน ในโรงงาน ที่อนุญาตให้ระบบปรับตัวเองตามสภาพจริง </p>
-</div>
-</article>
-
-
-<!-- Card 3 -->
-<article class="card">
-<div class="card-media">
-<img src="https://img2.pic.in.th/pic/p34fff76b187a8e023.jpg?auto=format&fit=crop&w=1200&q=300" alt="Dolomites — Italy" />
-</div>
-<div class="card-body">
-<h3 class="card-title"><b>AI ที่รู้เรื่องงานของคุณจริงๆ</b></h3>
-<p class="card-desc">โมเดล AI ที่ถูกฝึกมาเพื่ออุตสาหกรรมเฉพาะทาง ไม่ได้รู้กว้างแบบ AI ทั่วไป แต่รู้ลึกในบริบทงานจริง ทำให้มีความแม่นยำสูงขึ้นและทำงานตามกฎ/ข้อบังคับได้ดี</p>
-</div>
-</article>
-
-
-</section>
-<div><p class="pcenter">อ้างอิง <a href="https://www.gartner.com/en/articles/top-technology-trends-2026">https://www.gartner.com/en/articles/top-technology-trends-2026</a></p></div>
-
-    <div class="divider"></div>
-
-    <p class="pcenter"><span class="highlight-bold">โตโยต้า BEV ระบบขับเคลื่อนไฟฟ้า</span><br>เทคโนโลยีที่ทำให้การขับขี่สมาร์ทและปลอดภัย</p>
-    <div class="image main">
-      <img src="https://img2.pic.in.th/pic/COLD_Special_EMAIL_ModelList_202601.jpg" alt="Toyota Motor Thailand" />
-      <br>
-      <ul class="actions">
-        <li><a href="https://www.toyota.co.th/model-list/?utm_source=EmailSF&utm_medium=Body&utm_content=ColdSpecial&utm_campaign=EmailSF_ColdSpecial_Allmodel_Body" class="btn-solid">ดูรุ่นรถ คลิก</a></li>
-     </ul>
+    <!-- 
+    HOT 
+    <div class="folder hot">
+      <h2>🔥 HOT</h2>
+      <ul>
+        <li><a href="HOT/page1.html">Blank </a></li>
+        <li><a href="HOT/page2.html">Blank</a></li>
+        <li><a href="HOT/page3.html">Blank</a></li>
+      </ul>
     </div>
 
-    <div class="divider"></div>
+    WARM
+    <div class="folder warm">
+      <h2>🌤️ WARM</h2>
+      <ul>
+        <li><a href="WARM/page1.html">Blank</a></li>
+        <li><a href="WARM/page2.html">Blank</a></li>
+        <li><a href="WARM/page3.html">Blank</a></li>
+      </ul>
+    </div> -->
 
-    <p class="pcenter"><span class="highlight-bold">โตโยต้าพร้อมเสิร์ฟคอนเทนต์ให้ตรงใจคุณ..</span><br>ลงทะเบียนรับข่าวสารและกิจกรรมดีๆ กับเราได้เลย</p>
-    <ul class="actions">
-      <li><a href="https://toyotath.co/xxxxxxx" class="btn-solid">ลงทะเบียน คลิก</a></li>
-    </ul>
-    <ul class="actions">
-      <li><a href="trend-tech1.html" class="btn-solid">Test Link</a></li>
-    </ul>
-  </article>
- </div>
+    <!-- COLD -->
+    <div class="folder cold">
+      <h2>❄️ COLD Special</h2>
+      <ul>
+        <li><a href="travel1.html">202509 - TRAVEL - Ride Into Nature</a></li>
+        <li><a href="sport1.html">202511 - SPORT - Premiere League Schedule</a></li>
+        <li><a href="travel2.html">202512 - TRAVEL - Your Dream Trip</a></li>
+        <li><a href="trend-tech1.html">202601 - TREND - New Trends 2026</a></li>
+      </ul>
+    </div>
+
+  </div>
+
 </body>
 </html>
-
-
-
