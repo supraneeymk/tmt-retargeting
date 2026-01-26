@@ -1,0 +1,593 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="https://img5.pic.in.th/file/secure-sv1/Toyota_logo_black_icontitle64_shape.png">
+  <title>Toyota Motor Thailand | Lifestyle - Superstitious</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700|Source+Sans+Pro:900");
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    /* Reset */
+    html, body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #D92323;       /* red link color */
+      text-decoration: underline; /* remove underline */
+    }
+
+    a:hover {
+      color: #A61B1B;       /* darker red on hover (optional) */
+      text-decoration: underline; /* or keep none if you don't want hover underline */
+    }
+
+    p {
+      font-size: 1.25rem;
+      text-align: left;
+      margin: 0.5rem 0 0.5rem 0;
+    }
+    .highlight-bold {
+      font-weight: 600; /* heavier than bold */
+    }
+    .highlight-red {
+      font-weight: 600; /* heavier than bold */
+      color: #D92323; 
+    }
+    .pcenter {
+     font-size: 1.25rem;
+     font-weight: 400;
+     text-align: center;
+     margin: 0.5rem 0 1rem 0;
+   }
+   .pcenter-red {
+     font-size: 1.25rem;
+     font-weight: 500;
+     text-align: center;
+     margin: 0.5rem 0 1rem 0;
+     color: #D92323;
+   }
+   .pbox {
+    background-color: #FFE3E3;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: justify-content;
+  }
+
+  .brand-tab {
+    /* background-color: #000000; Red */
+    background: linear-gradient(to top, #000000, #5E5E5E);
+    color: #fff; /* White text */
+    display: flex;
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Horizontal center */
+    gap: 0.8rem; /* Space between logo and text */
+    padding: 0.2rem 1rem;
+    font-weight: 600;
+    font-family: Prompt, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .brand-logo {
+    height: 50px; /* adjust as needed */
+    width: auto;
+  }
+
+  .brand-text {
+    white-space: nowrap; /* prevent line break */
+    padding: 0 0 0 0rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Prompt, sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+  }
+
+  h7 {
+    font-family: Prompt, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+  }
+
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    border-bottom: 0;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1 { font-size: 2.5rem; line-height: 1; margin: 0 0 0.5rem 0; }
+  h2 { font-size: 1.25rem; line-height: 1; margin: 0 0 0.5rem 0; }
+  h3 { font-size: 1.1rem; margin: 0 0 1rem 0; }
+  h4 { font-size: 1rem; }
+  h5 { font-size: 0.9rem; }
+  h6 { font-size: 0.8rem; }
+  h7 { font-size: 0.8rem; }
+
+  ul { list-style: none; }
+
+  body {
+    font-family: Prompt, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #1C1919;
+    background-color: #E0E0E0;
+  }
+
+  /* Main */
+  #main {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 72rem;
+    width: calc(100% - 1rem);
+    z-index: 2;
+  }
+  #main > * {
+    padding: 4rem 4rem 2rem;
+    border-top: 2px solid #eee;
+  }
+  #main > *:first-child {
+    border-top: 0;
+    padding-top:1rem; /* closer to top */
+  }
+  #main > *:not(:first-child)::before {
+    content: "";
+    display: block;
+    width: 100px; /* line length */
+    height: 4px;
+    margin: 0 auto 2rem auto; /* centered with space below */
+    background: linear-gradient(to right, #D42828, #FF6B6B);
+    border-radius: 2px;
+  }
+
+  /* Post */
+  .post.featured {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  .post.featured h1 {
+    font-family: Prompt, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .post.featured h2 {
+    font-family: Prompt, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .post.featured h3 {
+    font-family: Prompt, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333;
+  }
+  .post.featured h4 {
+    font-family: Prompt, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #333;
+    text-transform: none !important;
+    font-style: italic;
+  }
+
+  /* Center buttons */
+  .actions, 
+  .image.main p a.btn-solid {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* First section background (light-red box) */
+  .featured-section {
+    background-color: #FFEAEA; /* light red */
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  /* Image */
+  .image.main {
+    position: relative;
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .image.main img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+  }
+
+  /* Gradient divider style */
+  .divider {
+   height: 1px; 
+   width: 100%; 
+   margin: 2rem 0; 
+   background: linear-gradient(to right, #9C9C9C, #CCCCCC);
+   border-radius: 2px;
+ }
+
+ /* Button */
+ .btn-solid,
+ .btn-overlay {
+  display: inline-block;
+  background: transparent;
+  color: #292929;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  border: 2px solid #292929;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none !important; /* remove underline */
+  transition: 0.2s;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.btn-solid {
+ color: #D12A2A;
+ border-color: #D12A2A;
+}
+
+.btn-overlay {
+ position: absolute;
+ bottom: 1.5rem; /* optional spacing */
+ left: 50%;
+ transform: translateX(-50%);
+ color: #D12A2A;
+ border-color: #D12A2A;
+ padding: 0.6rem 1.8rem; /* slightly bigger for mobile readability */
+}
+
+.btn-solid:hover,
+.btn-overlay:hover {
+  background: #D42828;
+  color: #fff;
+  border-color: #D42828;
+}
+
+
+/* Card Vacation */
+
+/* Container */
+.gallery-wrap{width:100%;max-width:1100px}
+h1.section-title{font-size:1.6rem;margin:0 0 18px;color:#0b1220;text-align:center}
+p.lead{margin:0 0 28px;text-align:center;color:#475569}
+
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+
+
+
+/* Zodiac Section */
+
+.zodiac-wrap{
+  background:#b51e1e;
+  background-image: repeating-radial-gradient(circle at 0 0,#b51e1e 0,#b51e1e 20px,#c42828 20px,#c42828 40px);
+  padding:3rem 1rem;
+  border-radius:12px;
+}
+
+.zodiac-panel{
+  max-width:1000px;
+  margin:0 auto 2rem;
+  padding:2.5rem 2rem 2rem;
+  border-radius:28px;
+  position:relative;
+}
+
+.zodiac-panel.pink{ background:#ffe6ea; }
+.zodiac-panel.green{ background:#e9f6f0; }
+.zodiac-panel.blue{ background:#e6f3ff; }
+
+.panel-title{
+  position:absolute;
+  top:-16px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#ffb3c1;
+  padding:0.4rem 0.8rem;
+  border-radius:999px;
+  font-weight:400;
+  font-size:0.8rem;
+}
+
+.zodiac-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:2rem;
+}
+
+.zodiac-item{
+  display:flex;
+  gap:1rem;
+}
+
+.zodiac-item img{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+}
+
+.zodiac-item h4{
+  margin:0;
+  font-size:1rem;
+}
+
+.zodiac-item span{
+  display:block;
+  font-size:0.8rem;
+  color:#555;
+}
+
+.zodiac-item p{
+  margin-top:0.3rem;
+  font-size:0.9rem;
+}
+
+/* first row layout */
+.zodiac-row.two-col{
+  max-width:1100px;
+  margin:0 auto 2rem;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2rem;
+}
+
+/* keep panels full width when inside grid */
+.zodiac-row .zodiac-panel{
+  margin:0;
+}
+
+
+.img-responsive{
+  width:70%;
+  max-width:70%;
+  height:auto;
+  display:block;
+  margin:0 auto;
+}
+
+/* mobile = stack */
+@media(max-width:768px){
+  .zodiac-row.two-col{
+    grid-template-columns:1fr;
+  }
+}
+
+/* Responsive */
+
+@media (max-width:980px){
+.cards{grid-template-columns:repeat(2,1fr)}
+}
+
+@media (max-width:640px){
+
+.cards{grid-template-columns:1fr}
+.card-media{height:220px}
+}
+ 
+@media (max-width: 768px) {
+  .btn-solid,
+  .btn-overlay {
+    font-size: 0.9rem;
+    padding: 0.45rem 1.2rem;
+  }
+  .zodiac-grid{
+    grid-template-columns:1fr;
+  }
+  .img-responsive{
+    width:100%;
+    max-width:100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-solid,
+  .btn-overlay {
+   font-size: 0.9rem;
+   padding: 0.5rem 1.2rem;
+
+ }
+}
+
+@media (max-width: 1920px) {
+  .post.featured h1 { font-size: 2.5rem; }
+  .post.featured h2 { font-size: 1.5rem; }
+  .post.featured h3 { font-size: 1.2rem; }
+  .post.featured p { font-size: 1rem; }
+  .pcenter { font-size: 1rem; }
+  #main > * { padding: 4rem 4rem; }
+}
+
+@media (max-width: 768px) {
+  .post.featured h1 { font-size: 2rem; }
+  .post.featured h2 { font-size: 1rem; }
+  .post.featured h3 { font-size: 0.9rem; }
+  .post.featured h4 { font-size: 0.7rem; }
+  .post.featured p { font-size: 0.9rem; }
+  .post.featured a { font-size: 0.9rem; }
+  .pcenter { font-size: 0.9rem; }
+  #main > * { padding: 2rem 2rem; }
+
+@media (max-width: 480px) {
+  .post.featured h1 { font-size: 1.75rem; }
+  .post.featured h2 { font-size: 0.9rem; }
+  .post.featured h3 { font-size: 0.9rem; }
+  .post.featured h4 { font-size: 0.5rem; }
+  .post.featured p { font-size: 0.9rem; }
+  .post.featured a { font-size: 0.9rem; }
+  .pcenter { font-size: 0.9rem; }
+  .brand-tab.brand-text { font-size: 0.8rem; }
+  #main > * { padding: 2rem 1rem; }
+  .img-responsive{
+    width:100%;
+    max-width:100%;
+  }
+}
+
+</style>
+</head>
+<body class="is-preload">
+
+ <!-- Branding Header Tab -->
+  <div class="brand-tab">
+   <img src="https://img2.pic.in.th/pic/Toyota_logo_white_padding.png" alt="Brand Logo" class="brand-logo" />
+   <span class="brand-text">LIFESTYLE - Single or Soulmate</span>
+ </div>
+
+ <!-- Main -->
+ <div id="main">
+
+
+  <!-- Featured Post -->
+  <article class="post featured">
+
+    <header class="major">
+      <img src="https://img2.pic.in.th/title.png"
+     alt="Toyota Motor Thailand"
+     class="img-responsive">
+    </header>
+
+
+
+
+<section class="zodiac-wrap">
+
+  <!-- FIRST ROW : 2 BOXES -->
+  <div class="zodiac-row two-col">
+
+    <div class="zodiac-panel pink">
+      <div class="panel-title">ราศีคนโสด เสน่ห์แรงเกินต้าน</div>
+      <div class="zodiac-grid">
+        <div>
+          <h5>ราศีพฤษภ (Taurus)</h5>
+          <h7>วันที่ 15 พ.ค. - 14 มิ.ย.</h7>
+          <br>เสน่ห์แรงเป็นพิเศษ คนโสดมีคนเข้ามาหลายรูปแบบ แต่ควรเลือกด้วยเหตุผล ไม่ใช่เพียงความรู้สึก
+        </div>
+        <div>
+          <h5>ราศีตุล (Libra)</h5>
+          <h7>วันที่ 18 ต.ค. - 16 พ.ย.</h7>
+          <br>เสน่ห์แรงเป็นพิเศษ คนโสดมีตัวเลือกมากและมีโอกาสเริ่มความสัมพันธ์ใหม่
+        </div>
+      </div>
+    </div>
+
+    <div class="zodiac-panel green">
+      <div class="panel-title">ราศีคนโสด มีลุ้นเจอคนจริงใจ</div>
+      <div class="zodiac-grid">
+        <div>
+          <h5>ราศีมังกร (Capricorn)</h5>
+          <h7>วันที่ 15 ม.ค. - 12 ก.พ.</h7>
+          <br>คนโสดมีเกณฑ์พบคนที่มีความเป็นผู้ใหญ่และพร้อมสร้างอนาคตร่วมกัน
+        </div>
+        <div>
+          <h5>ราศีกรกฎ (Cancer)</h5>
+          <h7>วันที่ 17 ก.ค. - 16 ส.ค.</h7>
+          <br>คนโสดมีโอกาสพบคนที่พร้อมสร้างความมั่นคง
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- SECOND ROW : FULL WIDTH -->
+  <div class="zodiac-panel pink">
+    <div class="panel-title">ราศีคนโสด เจอรักใกล้ตัวกว่าที่คิด</div>
+    <div class="zodiac-grid">
+        <div>
+          <h5>ราศีเมษ (Aries) </h5>
+          <h7>วันที่ 14 เม.ย. - 14 พ.ค.</h7>
+          <br>คนโสดมีเกณฑ์พบคนจากแวดวงการงาน ความสัมพันธ์เริ่มจากความเข้าใจ
+        </div>
+        <div>
+          <h5>ราศีเมถุน (Gemini)</h5>
+          <h7>วันที่ 15 มิ.ย. - 16 ก.ค.</h7>
+          <br>คนโสดมีโอกาสเริ่มความสัมพันธ์จากการพูดคุย แต่ยังไม่ควรเร่งตัดสินใจ
+        </div>
+        <div>
+          <h5>ราศีกันย์ (Virgo)</h5>
+          <h7>วันที่ 17 ก.ย. - 17 ต.ค.</h7>
+          <br>คนโสดมีโอกาสพบคนจากที่ทำงานหรือคนใกล้ตัว
+        </div>
+        <div>
+          <h5>ราศีธนู (Sagittarius)</h5>
+          <h7>วันที่ 16 ธ.ค. - 14 ม.ค.</h7>
+          <br>คนโสดมีโอกาสเริ่มความสัมพันธ์จากการเดินทางหรือการเรียนรู้ร่วมกัน
+        </div>
+    </div>
+  </div>
+
+  <!-- THIRD ROW : FULL WIDTH -->
+  <div class="zodiac-panel blue">
+    <div class="panel-title">ราศีคนโสด ยังไม่รีบ ขอดูๆไปก่อน</div>
+    <div class="zodiac-grid">
+        <div>
+          <h5>ราศีกุมภ์ (Aquarius)</h5>
+          <h7>วันที่ 13 ก.พ. - 14 มี.ค.</h7>
+          <br>คนโสดอาจยังไม่พร้อมผูกมัดในระยะยาว
+        </div>
+        <div>
+          <h5>ราศีมีน (Pisces)</h5>
+          <h7>วันที่ 15 มี.ค. - 13 เม.ย.</h7>
+          <br>คนโสดอาจพบความสัมพันธ์ที่ลึกซึ้งทางอารมณ์ แต่ต้องระวังความไม่ชัดเจน
+        </div>
+        <div>
+          <h5>ราศีสิงห์ (Leo)</h5>
+          <h7>วันที่ 17 ส.ค. - 16 ก.ย.</h7>
+          <br>คนโสดมีคนเข้ามาแต่ต้องดูความจริงใจเป็นหลัก
+        </div>
+        <div>
+          <h5>ราศีพิจิก (Scorpio)</h5>
+          <h7>วันที่ 17 พ.ย. - 15 ธ.ค.</h7>
+          <br>คนโสดอาจพบความสัมพันธ์ที่เข้มข้นแต่ต้องใช้สติควบคู่หัวใจ
+        </div>
+    </div>
+  </div>
+
+</section>
+
+    <div class="divider"></div>
+
+    <p class="pcenter">เรื่องความรักอาจต้องลุ้น แต่เรื่องรถไม่ต้อง<br><span class="highlight-bold">ขับโตโยต้า มั่นใจได้ทุกวัน</span></p>
+    <div class="image main">
+      <img src="https://img2.pic.in.th/COLD_Special_EMAIL_ContentModel_202602.jpg" alt="Toyota Motor Thailand" />
+      <br>
+      <ul class="actions">
+        <li><a href="https://www.toyota.co.th/model-list/?utm_source=EmailSF&utm_medium=Body&utm_content=ColdSpecial&utm_campaign=EmailSF_ColdSpecial_Allmodel_Body" class="btn-solid">ดูรุ่นรถ คลิก</a></li>
+     </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <p class="pcenter"><span class="highlight-bold">โตโยต้าพร้อมเสิร์ฟคอนเทนต์ให้ตรงใจคุณ..</span><br>ลงทะเบียนรับข่าวสารและกิจกรรมดีๆ กับเราได้เลย</p>
+    <ul class="actions">
+      <li><a href="https://toyotath.co/xxxxxxx" class="btn-solid">ลงทะเบียน คลิก</a></li>
+    </ul>
+
+  </article>
+ </div>
+</body>
+</html>
+
+
