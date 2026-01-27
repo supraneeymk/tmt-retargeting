@@ -37,6 +37,12 @@
       font-weight: 600; /* heavier than bold */
       color: #D92323; 
     }
+
+    .highlight-small {
+      font-size: 0.8rem;
+      color: #D92323; 
+    }
+
     .pcenter {
      font-size: 1.25rem;
      font-weight: 400;
@@ -153,37 +159,7 @@
     border-radius: 2px;
   }
 
-  /* Post */
-  .post.featured {
-    text-align: center;
-    padding: 4rem 2rem;
-  }
-  .post.featured h1 {
-    font-family: Prompt, sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  .post.featured h2 {
-    font-family: Prompt, sans-serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  .post.featured h3 {
-    font-family: Prompt, sans-serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #333;
-  }
-  .post.featured h4 {
-    font-family: Prompt, sans-serif;
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: #333;
-    text-transform: none !important;
-    font-style: italic;
-  }
+ 
 
   /* Center buttons */
   .actions, 
@@ -266,16 +242,6 @@
 }
 
 
-/* Card Vacation */
-
-/* Container */
-.gallery-wrap{width:100%;max-width:1100px}
-h1.section-title{font-size:1.6rem;margin:0 0 18px;color:#0b1220;text-align:center}
-p.lead{margin:0 0 28px;text-align:center;color:#475569}
-
-
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-
 
 
 /* Zodiac Section */
@@ -291,29 +257,44 @@ p.lead{margin:0 0 28px;text-align:center;color:#475569}
   max-width:1000px;
   margin:0 auto 2rem;
   padding:2.5rem 2rem 2rem;
-  border-radius:28px;
+  border-radius:12px;
   position:relative;
 }
 
 .zodiac-panel.pink{ background:#ffe6ea; }
 .zodiac-panel.green{ background:#e9f6f0; }
 .zodiac-panel.blue{ background:#e6f3ff; }
+.zodiac-panel.violet{ background:#FDEDFF; }
+
 
 .panel-title{
-  position:absolute;
-  top:-16px;
-  left:50%;
-  transform:translateX(-50%);
-  background:#ffb3c1;
-  padding:0.4rem 0.8rem;
-  border-radius:999px;
-  font-weight:400;
-  font-size:0.8rem;
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffb3c1;
+  padding: 0.4rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+
+  min-width: 220px;      /* ⭐ เพิ่มความกว้าง */
+  text-align: center;    /* ⭐ ข้อความอยู่กลาง */
 }
+
+.zodiac-panel.pink .panel-title { background:#E38492; }
+.zodiac-panel.green  .panel-title { background:#83D6AF; }
+.zodiac-panel.blue .panel-title { background:#7BAFE0; }
+.zodiac-panel.violet  .panel-title { background:#E58BE8; }
 
 .zodiac-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
+  gap:2rem;
+}
+
+.zodiac-grid2{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
   gap:2rem;
 }
 
@@ -323,8 +304,8 @@ p.lead{margin:0 0 28px;text-align:center;color:#475569}
 }
 
 .zodiac-item img{
-  width:48px;
-  height:48px;
+  width:100px;
+  height:100px;
   border-radius:50%;
 }
 
@@ -401,6 +382,21 @@ p.lead{margin:0 0 28px;text-align:center;color:#475569}
   }
 }
 
+@media (max-width:1024px){
+  .zodiac-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .zodiac-grid2{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:640px){
+  .zodiac-grid2{
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 480px) {
   .btn-solid,
   .btn-overlay {
@@ -463,7 +459,7 @@ p.lead{margin:0 0 28px;text-align:center;color:#475569}
   <article class="post featured">
 
     <header class="major">
-      <img src="https://img2.pic.in.th/title.png"
+      <img src="https://img5.pic.in.th/file/secure-sv1/title-single-or-soulmate.png"
      alt="Toyota Motor Thailand"
      class="img-responsive">
     </header>
@@ -479,32 +475,42 @@ p.lead{margin:0 0 28px;text-align:center;color:#475569}
     <div class="zodiac-panel pink">
       <div class="panel-title">ราศีคนโสด เสน่ห์แรงเกินต้าน</div>
       <div class="zodiac-grid">
+
         <div>
-          <h5>ราศีพฤษภ (Taurus)</h5>
-          <h7>วันที่ 15 พ.ค. - 14 มิ.ย.</h7>
+          <div class="zodiac-item"><img src="https://img5.pic.in.th/file/secure-sv1/m5c2ab6e5b7b75aa09.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีพฤษภ (Taurus)</span><br>
+          <span class="highlight-small">วันที่ 15 พ.ค. - 14 มิ.ย.</span>
           <br>เสน่ห์แรงเป็นพิเศษ คนโสดมีคนเข้ามาหลายรูปแบบ แต่ควรเลือกด้วยเหตุผล ไม่ใช่เพียงความรู้สึก
         </div>
+
         <div>
-          <h5>ราศีตุล (Libra)</h5>
-          <h7>วันที่ 18 ต.ค. - 16 พ.ย.</h7>
+          <div class="zodiac-item"><img src="https://img2.pic.in.th/m10.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีตุลย์ (Libra)</span><br>
+          <span class="highlight-small">วันที่ 18 ต.ค. - 16 พ.ย.</span>
           <br>เสน่ห์แรงเป็นพิเศษ คนโสดมีตัวเลือกมากและมีโอกาสเริ่มความสัมพันธ์ใหม่
         </div>
+
       </div>
     </div>
 
     <div class="zodiac-panel green">
       <div class="panel-title">ราศีคนโสด มีลุ้นเจอคนจริงใจ</div>
       <div class="zodiac-grid">
+
         <div>
-          <h5>ราศีมังกร (Capricorn)</h5>
-          <h7>วันที่ 15 ม.ค. - 12 ก.พ.</h7>
+          <div class="zodiac-item"><img src="https://img5.pic.in.th/file/secure-sv1/m15c7afbdefd041505.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีมังกร (Capricorn)</span><br>
+          <span class="highlight-small">วันที่ 15 ม.ค. - 12 ก.พ.</span>
           <br>คนโสดมีเกณฑ์พบคนที่มีความเป็นผู้ใหญ่และพร้อมสร้างอนาคตร่วมกัน
         </div>
+
         <div>
-          <h5>ราศีกรกฎ (Cancer)</h5>
-          <h7>วันที่ 17 ก.ค. - 16 ส.ค.</h7>
+          <div class="zodiac-item"><img src="https://img5.pic.in.th/file/secure-sv1/m7439d3e906da48871.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีกรกฎ (Cancer)</span><br>
+          <span class="highlight-small">วันที่ 17 ก.ค. - 16 ส.ค.</span>
           <br>คนโสดมีโอกาสพบคนที่พร้อมสร้างความมั่นคง
         </div>
+
       </div>
     </div>
 
@@ -512,56 +518,74 @@ p.lead{margin:0 0 28px;text-align:center;color:#475569}
   </div>
 
   <!-- SECOND ROW : FULL WIDTH -->
-  <div class="zodiac-panel pink">
+  <div class="zodiac-panel violet">
     <div class="panel-title">ราศีคนโสด เจอรักใกล้ตัวกว่าที่คิด</div>
-    <div class="zodiac-grid">
+    <div class="zodiac-grid2">
+        
         <div>
-          <h5>ราศีเมษ (Aries) </h5>
-          <h7>วันที่ 14 เม.ย. - 14 พ.ค.</h7>
+          <div class="zodiac-item"><img src="https://img5.pic.in.th/file/secure-sv1/m47c9ad131a2b87f99.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีเมษ (Aries)</span><br>
+          <span class="highlight-small">วันที่ 14 เม.ย. - 14 พ.ค.</span>
           <br>คนโสดมีเกณฑ์พบคนจากแวดวงการงาน ความสัมพันธ์เริ่มจากความเข้าใจ
         </div>
+
         <div>
-          <h5>ราศีเมถุน (Gemini)</h5>
-          <h7>วันที่ 15 มิ.ย. - 16 ก.ค.</h7>
+          <div class="zodiac-item"><img src="https://img2.pic.in.th/m6.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีเมถุน (Gemini)</span><br>
+          <span class="highlight-small">วันที่ 15 มิ.ย. - 16 ก.ค.</span>
           <br>คนโสดมีโอกาสเริ่มความสัมพันธ์จากการพูดคุย แต่ยังไม่ควรเร่งตัดสินใจ
         </div>
+
         <div>
-          <h5>ราศีกันย์ (Virgo)</h5>
-          <h7>วันที่ 17 ก.ย. - 17 ต.ค.</h7>
+          <div class="zodiac-item"><img src="https://img5.pic.in.th/file/secure-sv1/m9efa4361edfb768f2.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีกันย์ (Virgo)</span><br>
+          <span class="highlight-small">วันที่ 17 ก.ย. - 17 ต.ค.</span>
           <br>คนโสดมีโอกาสพบคนจากที่ทำงานหรือคนใกล้ตัว
         </div>
+
         <div>
-          <h5>ราศีธนู (Sagittarius)</h5>
-          <h7>วันที่ 16 ธ.ค. - 14 ม.ค.</h7>
+          <div class="zodiac-item"><img src="https://img2.pic.in.th/m12.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีธนู (Sagittarius)</span><br>
+          <span class="highlight-small">วันที่ 16 ธ.ค. - 14 ม.ค.</span>
           <br>คนโสดมีโอกาสเริ่มความสัมพันธ์จากการเดินทางหรือการเรียนรู้ร่วมกัน
         </div>
+
     </div>
   </div>
 
   <!-- THIRD ROW : FULL WIDTH -->
   <div class="zodiac-panel blue">
     <div class="panel-title">ราศีคนโสด ยังไม่รีบ ขอดูๆไปก่อน</div>
-    <div class="zodiac-grid">
+    <div class="zodiac-grid2">
+        
         <div>
-          <h5>ราศีกุมภ์ (Aquarius)</h5>
-          <h7>วันที่ 13 ก.พ. - 14 มี.ค.</h7>
+          <div class="zodiac-item"><img src="https://img2.pic.in.th/m217f0d8185da2a84d.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีกุมภ์ (Aquarius)</span><br>
+          <span class="highlight-small">วันที่ 13 ก.พ. - 14 มี.ค.</span>
           <br>คนโสดอาจยังไม่พร้อมผูกมัดในระยะยาว
         </div>
+
         <div>
-          <h5>ราศีมีน (Pisces)</h5>
-          <h7>วันที่ 15 มี.ค. - 13 เม.ย.</h7>
+          <div class="zodiac-item"><img src="https://img2.pic.in.th/m3.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีมีน (Pisces)</span><br>
+          <span class="highlight-small">วันที่ 15 มี.ค. - 13 เม.ย.</span>
           <br>คนโสดอาจพบความสัมพันธ์ที่ลึกซึ้งทางอารมณ์ แต่ต้องระวังความไม่ชัดเจน
         </div>
+        
         <div>
-          <h5>ราศีสิงห์ (Leo)</h5>
-          <h7>วันที่ 17 ส.ค. - 16 ก.ย.</h7>
+          <div class="zodiac-item"><img src="https://img2.pic.in.th/m8.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีสิงห์ (Leo)</span><br>
+          <span class="highlight-small">วันที่ 17 ส.ค. - 16 ก.ย.</span>
           <br>คนโสดมีคนเข้ามาแต่ต้องดูความจริงใจเป็นหลัก
         </div>
+
         <div>
-          <h5>ราศีพิจิก (Scorpio)</h5>
-          <h7>วันที่ 17 พ.ย. - 15 ธ.ค.</h7>
+          <div class="zodiac-item"><img src="https://img5.pic.in.th/file/secure-sv1/m11f4679a9bfa6ba22f.png" alt="Brand Logo" class="brand-logo" /></div>
+          <span class="highlight-bold">ราศีพิจิก (Scorpio)</span><br>
+          <span class="highlight-small">วันที่ 17 พ.ย. - 15 ธ.ค.</span>
           <br>คนโสดอาจพบความสัมพันธ์ที่เข้มข้นแต่ต้องใช้สติควบคู่หัวใจ
         </div>
+
     </div>
   </div>
 
